@@ -30,4 +30,4 @@ jobs:
         pylint --output-format=colorized --fail-under=8 src/ tests/
     - name: Test with pytest
       run: |
-        pytest --color=auto --code-highlight=yes --cov=awesome --no-cov-on-fail --cov-config=coverage.ini --html=report.html tests/
+        PYTHONPATH=src pytest --color=auto --code-highlight=yes --cov=awesome --no-cov-on-fail --cov-config=coverage.ini --html=report.html tests/
