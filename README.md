@@ -40,4 +40,4 @@ python3 -m pip install virtualenv
 **Note:** Run `Setup` as your init command (or after `Clean`)
 
 ## References
-* [PySpark: unit, integration and end-to-end tests][https://medium.com/@gu.martinm/pyspark-unit-integration-and-end-to-end-tests-c2ba71467d85]
+* [PySpark: unit, integration and end-to-end tests](https://medium.com/@gu.martinm/pyspark-unit-integration-and-end-to-end-tests-c2ba71467d85)
