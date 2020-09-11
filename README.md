@@ -1,3 +1,4 @@
+![CI](https://github.com/umbertogriffo/pyspark-shared-spark-session-helper/workflows/CI/badge.svg)
 
 PySpark: unit, integration and end to end tests.
 =========================
