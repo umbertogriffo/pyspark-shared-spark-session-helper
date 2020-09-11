@@ -1,20 +1,40 @@
-[![Build Status](https://travis-ci.org/gumartinm/pyspark-shared-spark-session-helper.svg?branch=master)](https://travis-ci.org/gumartinm/pyspark-shared-spark-session-helper)
 
 PySpark: unit, integration and end to end tests.
 =========================
 
+## Prerequisites
 
-## Building
+### MacOs
 
-### Prerequisites
-
-In order to build this project [**tox**](https://tox.readthedocs.io/en/latest/) and [**JVM 8**](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot) must be available in your environment.
-
-### Command
-
+Install Brew:
 ```
-tox
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+Install python 3.7+ and virtualenv:
 
+```.env
+brew install python3
+python3 -m pip install virtualenv
+```
 
+## How to use the make file
+* All-in-one: ```make all```
+  * Setup, test and package.
+* Check: ```make check```
+  * Use It to check that `which pip3` and `which python3` points to the right path.
+* Clean: ```make clean```
+  * Removes all cached files.
+* Setup: ```make setup-env```
+  * Installs all dependencies.
+* Export dependencies of the environment: ```make export_env```
+  * Export a requirements.txt file containing the detailed dependencies of the environment.
+* Test: ```make test```
+  * Runs all tests.
+  * Using [pytest](https://pypi.org/project/pytest/)
+* Lint: ```make lint```
+  * Checks PEP8 conformance and code smells using [pylint](https://www.pylint.org/).
+* Package: ```make package```
+  * Creates a bundle of software to be installed.
+
+**Note:** Run `Setup` as your init command (or after `Clean`)
