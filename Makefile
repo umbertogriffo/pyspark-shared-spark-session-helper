@@ -24,6 +24,7 @@ clean:
 setup-env:
 	virtualenv .pyenv; \
 	. .pyenv/bin/activate; \
+	python3 -m pip install --upgrade pip; \
 	pip3 install -r requirements.txt; \
 
 export-env:
