@@ -11,5 +11,5 @@ setup(
     url='https://gumartinm.name/',
 
     packages=find_packages(where='src'),
-    package_dir={'': 'src'},
+    package_dir={'': 'src'}
 )
